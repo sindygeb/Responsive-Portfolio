@@ -4,56 +4,150 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Sindy Gebhard's Portfolio</title>
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- Google Fonts Link -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700" rel="stylesheet">
     </head>
 
     <body>
-        <header>
-            <div class="head-content">
-                <h1>
-                     Sindy Gebhard
+        <!-- Landing Page -->
+        <div id="landPage">
+            <div id="boxPage">
+                <h1 id="bigHello">
+                    Hi, I'm Sindy.
                 </h1>
-                
-                <div id="links">
-                    <a href="index.html" id="about-link">
-                        About
-                    </a>
-                    <a href="portfolio.html" id="portfolio-link">
-                        Portfolio
-                    </a>
-                    <a href="contact.html" id="contact-link">
-                        Contact
-                    </a>
+
+                <p class="introText">
+                I'm a designer, illustrator and aspiring front end developer.
+                <br>
+                Scroll down to learn more about me, my work and how we can connect!
+                </p>
+            </div>
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/images/background_video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Links/Nav Bar -->
+        <div id="navBar">
+            <div id="links">
+                <a href="#about-me" id="about-link">
+                    About
+                </a>
+                <a href="#portfolio" id="portfolio-link">
+                    Portfolio
+                </a>
+                <a href="#contact-info" id="contact-link">
+                    Contact
+                </a>
+            </div>
+        </div>
+        <div></div>
+        <!-- About Me -->
+        <div id="about-me">
+            <h2 class="header-titles">
+                - About -
+            </h2>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <!-- Portfolio Stuff -->
+        <div id="portfolio">
+
+            <h2 class="header-titles">
+                - Portfolio -
+            </h2>
+
+            <div class="image">
+                <img src="assets/images/photo_01.jpg" alt="Placeholder 1" class="pic">
+                <h4>Project 1</h4>
+            </div>
+
+            <a href="https://sindygeb.github.io/Word-Guess-Game/"> 
+                <div class="image">
+                    <img src="assets/images/photo_02.jpg" alt="Placeholder 2" class="pic">
+                    <h4>Word Guess Game</h4>
                 </div>
-            </div>
-        </header>
-        <br><br>
-        <main>
-            <div class="container">
-                <section id="main-bio">
-                    <div class="col-3">
-                        <h2 class="text-block">
-                            About Me
-                        </h2>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/images/me.jpg" alt="Sindy Gebhard" class="bio-image">   
-                    </div>
-                    <div class="col-5">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada viverra commodo. Sed molestie vel ipsum a tincidunt. Mauris sit amet lacus in arcu aliquam mattis id ac magna. Etiam scelerisque volutpat est, eu convallis magna maximus et. Ut tristique magna id sem scelerisque scelerisque.
-            
-                            <br> <br> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ut commodo magna. Donec bibendum lectus libero, at scelerisque quam facilisis eget. Duis tristique ut tortor sed tristique. Praesent et nulla nec ante ultricies cursus. Nulla gravida nisi et vulputate condimentum. Quisque pharetra arcu et est faucibus dapibus.
-                                
-                            <br> <br> Ut rutrum ut felis vitae facilisis. Integer a dictum dui.
-                        </p>
-                    </div>
-                </section>
-            </div>
-        </main>
+            </a>  
+
+            <div class="clearfix"></div>
+
+            <a href="https://sindygeb.github.io/crystal-game/">
+                <div class="image">
+                    <img src="assets/images/photo_03.jpg" alt="Placeholder 3" class="pic">
+                    <h4>Crystal Collecter</h4>
+                </div>
+            </a>
+
+            <a href="https://sindygeb.github.io/TriviaGame/">
+                <div class="image">
+                    <img src="assets/images/photo_04.jpg" alt="Placeholder 4" class="pic">
+                    <h4>Landmark Trivia Game</h4>
+                </div>
+            </a>
+
+            <div class="clearfix"></div>
+
+            <a href="https://sindygeb.github.io/giphy-page/">
+                <div class="image">
+                    <img src="assets/images/photo_05.jpg" alt="Placeholder 5" class="pic">
+                    <h4>Superhero GIPHY Page</h4>
+                </div>
+            </a>
+
+            <a href="https://sindygeb.github.io/train-time/">
+                <div class="image">
+                    <img src="assets/images/photo_06.jpg" alt="Placeholder 5" class="pic">
+                    <h4>Train Scheduler</h4>
+                </div>
+            </a>
+        </div>
+
+        <!-- Contact Info -->
+
+        <div id="contact-info">
+
+            <h2 class="header-titles">
+                - Contact -
+            </h2>  
+
+            <form action="/action_page.php">
+                Name:<br>
+                
+                <input type="text" name="name" id="namebox">
+                
+                <br><br>
+                
+                Email:<br>
+                
+                <input type="text" name="email" id="emailbox">
+                
+                <br><br>
+                
+                Message:<br>
+                
+                <textarea type="text" name="message" id="messagebox"></textarea>
+                
+                <br><br>
+                
+                <button type="button" class="submit" onclick="alert('Message sent! Thank you for reaching out - I will get back to you shortly.')">Submit</button>
+                
+                <br><br>
+            </form>
+        </div>    
+        <!-- Footer Stuff -->
         <div class="footer">
             <p id="foot-text">Copyright © 2018</p>
         </div>
-    </body>
+
+        <!-- JQuery References -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Script File -->
+        <script src="assets/javascript/site.js"></script>
+        </body>
 </html>
