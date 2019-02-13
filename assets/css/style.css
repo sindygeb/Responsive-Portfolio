@@ -1,41 +1,57 @@
+body {
+    background-image: url("../images/background_placeholder.jpg");
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
 /* Landing Page CSS */
+.top {
+    height: 200px;
+}
+
 #landPage {
-    background-color: #474747;
-    height: 960px;
+    height: 750px;
 }
 
 #bigHello {
     color: #ffffff;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 48px;
+    font-size: 80px;
     font-weight: 700;
+    margin: 0;
 }
 .introText {
     color: aquamarine;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: lighter;
-    font-size: 30px;
-    line-height: 45px;
-    position: relative;
+    font-size: 24px;
+    line-height: 40px;
+}
+#box {
+    text-decoration: line-through;
 }
 
 #boxPage {
     border-style: solid;
-    border-width: 4px;
-    border-color: aquamarine;
-    width: 50%;
-    padding: 30px;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-radius: 25px;
+    width: 60%;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 100px;
     margin: auto;
+    height: 300px;
 }
-
-#myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 80%;
+#joke {
+    color: aquamarine;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
 }
 
 /* Nav Bar */
@@ -43,6 +59,9 @@
     background-color: #333333;
     height: 60px;
     overflow: hidden;
+    position: sticky;
+    top: 0;
+    margin: 0;
 }
 
 #links {
@@ -65,15 +84,6 @@ a:link {
     padding: 20px;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + .content {
-    padding-top: 60px;
-}
 /* Headers */
 .header-titles {
     text-align: center;
@@ -85,15 +95,193 @@ a:link {
 /* About Me */
 #about-me {
     background-color: #ffffff;
+    height: auto;
+    overflow: auto;
+}
+.bioInfo {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    padding-right: 40px;
 }
 
+#mermaid {
+    height: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 20px;
+    float: left;
+}
+.mermaidInfo {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: #333333;
+
+}
+
+#icon {
+    width: 30px;
+    height: auto;
+    padding-right: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Design */
+
+#design {
+    background-color: #131b3d;
+    height: auto;
+    overflow: auto;
+}
+
+#designHead {
+    color: #ffffff;
+}
+
+#dragon {
+    width: 300px;
+    height: auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#comingSoon {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+}
 /* Portfolio */
 #portfolio {
     background-color: #f0f0f0;
+    height: auto;
+    overflow: auto;
+}
+.work {
+    padding: 20px;
+}
 
+.container {
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    
+}
+
+.pic {
+    width: 500px;
+    height: auto;
+}
+
+.title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+}
+.linkBtn {
+    background-color: aquamarine;
+    color: #333333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    text-align: center;
 }
 
 /* Contact */
 #contact-info {
-    background-color: #777777;
+    background-color: #ffffff;
+    height: 980px;
+}
+
+#simpleText {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+}
+
+form {
+    background-color: #f0f0f0;
+    padding: 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+#namebox, #emailbox {
+    height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    width: 45%;
+}
+#namebox {
+    float: left;
+}
+#emailbox {
+    float: right;
+}
+#messagebox {
+    height: 200px;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.submit {
+    background-color: aquamarine;
+    color: #333333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333333;
+    height: 60px;
+}
+#foot-text {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    
+
+}
+#twitterLink {
+    width: 34px;
+}
+
+#socialLinks {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
 }

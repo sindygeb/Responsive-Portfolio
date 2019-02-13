@@ -9,25 +9,28 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <!-- Google Fonts Link -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700" rel="stylesheet">
+        <title>Sindy Gebhard Portfolio</title>
     </head>
 
     <body>
         <!-- Landing Page -->
+        <div class="top"></div>
         <div id="landPage">
+            <h1 class="animated slideInUp delay-1s" id="bigHello">
+                Hi, I'm Sindy.
+            </h1>
             <div id="boxPage">
-                <h1 id="bigHello">
-                    Hi, I'm Sindy.
-                </h1>
-
                 <p class="introText">
-                I'm a designer, illustrator and aspiring front end developer.
+                I'm a designer, illustrator and aspiring front end developer that 
+                <br> loves to think outside the <span id="box">box</span> planet.
                 <br>
-                Scroll down to learn more about me, my work and how we can connect!
+                Ok, maybe not so other worldly, but hey, it fits with the theme.
+                <br>
+                Scroll down to learn more about me, my work and how we can connect.
                 </p>
             </div>
-            <video autoplay muted loop id="myVideo">
-                <source src="assets/images/background_video.mp4" type="video/mp4">
-            </video>
+            <br><br>
+            <p id="joke" class="animated fadeIn delay-5s"> Psst. Get it? My name went "outside the box"?</p>
         </div>
 
         <!-- Links/Nav Bar -->
@@ -35,6 +38,9 @@
             <div id="links">
                 <a href="#about-me" id="about-link">
                     About
+                </a>
+                <a href="#design" id="design-link">
+                    Design Work
                 </a>
                 <a href="#portfolio" id="portfolio-link">
                     Portfolio
@@ -45,92 +51,192 @@
             </div>
         </div>
         <div></div>
+
         <!-- About Me -->
         <div id="about-me">
             <h2 class="header-titles">
+                <br><br>
                 - About -
             </h2>
-            <br>
-            <br>
-            <br>
+            <div class="merContainer">
+                <img src="assets/images/mermaid.svg" id="mermaid">
+                <p class="mermaidInfo">This mermaid is an illustration created for a work project in Fall 2018.</p>
+            </div>
+
+            <p class="bioInfo"> 
+                <img src="assets/images/hat_grad.svg" id="icon"> 
+                <br>
+                Hailing from Minneapolis, Minnesota (brr...), I studied graphic design and earned a bachelor's degree from the University of Minnesota.
+                <br><br>
+
+                <img src="assets/images/controller.svg" id="icon">
+                <br>
+                After freelancing for a few years, I went back to school to expand my skill set and earned an associate's degree learning about video game art and animation.
+                <br><br>
+                <img src="assets/images/laptop.svg" id="icon">
+                <br>
+                Spending the last few years as a UX designer, animator, illustrator and graphic artist, I just couldn't shake this whole learning thing, and enrolled in a full stack coding bootcamp.
+                I'm hoping to work on a multitude of fun projects, that incorporate my design saavy along with my technical know how.
+                <br><br>
+                <img src="assets/images/firework.svg" id="icon">
+                <br>
+                In my spare time, I love playing games - video, board, card - you name it, spending time with my two crazy dogs, fellow design-nerd-and-geek husband, and my beautiful little daughter/inspiration.
+                <br><br>
+            </p>
         </div>
+        <!-- Portfolio Stuff -->
+        <div id="design">
+            <h2 class="header-titles" id="designHead">
+                <br><br>
+                - Design Work -
+            </h2>
+
+            <img src="assets/images/dragon.svg" id="dragon" class="center">
+
+            <br><br><br><br>
+
+            <h1 id="comingSoon">Coming Soon!</h1>
+
+            <br><br><br><br>
+
+        </div>
+
+        <!-- Clearfix-->
+        <div class="cleafix"></div>
 
         <!-- Portfolio Stuff -->
         <div id="portfolio">
 
             <h2 class="header-titles">
+                <br><br>
                 - Portfolio -
             </h2>
 
-            <div class="image">
-                <img src="assets/images/photo_01.jpg" alt="Placeholder 1" class="pic">
-                <h4>Project 1</h4>
+            <div class="work">
+                <div class="container">
+                    <a href="https://sindygeb.github.io/Word-Guess-Game/"> 
+                        <div class="image">
+                            <img src="assets/images/photo_02.jpg" class="pic">
+                        </div>
+                    </a>
+                    <div class="middle">
+                        <div class="title">Word Guess Game</div>
+                    </div>
+                    <br><br>
+                    <div class="gitHub">
+                        <a href="https://github.com/sindygeb/Word-Guess-Game.git" class="linkBtn">Link to GitHub Repo</a>
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="container">
+                    <a href="https://sindygeb.github.io/crystal-game/">
+                        <div class="image">
+                            <img src="assets/images/photo_03.jpg" class="pic">
+                        </div>
+                    </a>
+                    <div class="middle">
+                        <div class="title">Crystal Collector</div>
+                    </div>
+                    <br><br>
+                        <div class="gitHub">
+                            <a href="https://github.com/sindygeb/crystal-game.git" class="linkBtn">Link to GitHub Repo</a>
+                        </div>
+                    <br><br>
+                </div>
+
+                <div class="container">
+                    <a href="https://sindygeb.github.io/TriviaGame/">
+                        <div class="image">
+                            <img src="assets/images/photo_04.jpg" class="pic">
+                        </div>
+                    </a>
+                    <div class="middle">
+                        <div class="title">Trivia Game</div>
+                    </div>
+                    <br><br>
+                        <div class="gitHub">
+                            <a href="https://github.com/sindygeb/TriviaGame.git" class="linkBtn">Link to GitHub Repo</a>
+                        </div>
+                    <br><br>
+                </div>
+
+                <div class="container">
+                    <a href="https://sindygeb.github.io/giphy-page/">
+                        <div class="image">
+                            <img src="assets/images/photo_05.jpg" class="pic">
+                        </div>
+                    </a>
+                    <div class="middle">
+                        <div class="title">Superhero GIPHY Page</div>
+                    </div>
+                    <br><br>
+                        <div class="gitHub">
+                            <a href="https://github.com/sindygeb/giphy-page.git" class="linkBtn">Link to GitHub Repo</a>
+                        </div>
+                    <br><br>
+                </div>
+
+                <div class="container">
+                    <a href="https://sindygeb.github.io/train-time/">
+                        <div class="image">
+                            <img src="assets/images/photo_06.jpg" class="pic">
+                        </div>
+                    </a>
+                    <div class="middle">
+                        <div class="title">Train Scheduler</div>
+                    </div>
+                    <br><br>
+                        <div class="gitHub">
+                            <a href="https://github.com/sindygeb/train-time.git" class="linkBtn">Link to GitHub Repo</a>
+                        </div>
+                    <br><br>
+                </div>
+
+                <div class="container">
+                    <a href="https://sindygeb.github.io/incredible-ninjas/">
+                        <div class="image">
+                            <img src="assets/images/photo_07.jpg" class="pic">
+                        </div>
+                    </a>
+                    <div class="middle">
+                        <div class="title">When I Was 18 Application</div>
+                    </div>
+                    <br><br>
+                        <div class="gitHub">
+                            <a href="https://github.com/sindygeb/incredible-ninjas.git" class="linkBtn">Link to GitHub Repo</a>
+                        </div>
+                    <br><br>
+                </div>
             </div>
-
-            <a href="https://sindygeb.github.io/Word-Guess-Game/"> 
-                <div class="image">
-                    <img src="assets/images/photo_02.jpg" alt="Placeholder 2" class="pic">
-                    <h4>Word Guess Game</h4>
-                </div>
-            </a>  
-
-            <div class="clearfix"></div>
-
-            <a href="https://sindygeb.github.io/crystal-game/">
-                <div class="image">
-                    <img src="assets/images/photo_03.jpg" alt="Placeholder 3" class="pic">
-                    <h4>Crystal Collecter</h4>
-                </div>
-            </a>
-
-            <a href="https://sindygeb.github.io/TriviaGame/">
-                <div class="image">
-                    <img src="assets/images/photo_04.jpg" alt="Placeholder 4" class="pic">
-                    <h4>Landmark Trivia Game</h4>
-                </div>
-            </a>
-
-            <div class="clearfix"></div>
-
-            <a href="https://sindygeb.github.io/giphy-page/">
-                <div class="image">
-                    <img src="assets/images/photo_05.jpg" alt="Placeholder 5" class="pic">
-                    <h4>Superhero GIPHY Page</h4>
-                </div>
-            </a>
-
-            <a href="https://sindygeb.github.io/train-time/">
-                <div class="image">
-                    <img src="assets/images/photo_06.jpg" alt="Placeholder 5" class="pic">
-                    <h4>Train Scheduler</h4>
-                </div>
-            </a>
         </div>
+
+        <!-- Clearfix-->
+        <div class="cleafix"></div>
 
         <!-- Contact Info -->
 
         <div id="contact-info">
 
             <h2 class="header-titles">
+                <br><br>
                 - Contact -
             </h2>  
-
+            
             <form action="/action_page.php">
-                Name:<br>
+
+                <p id="simpleText">Want to connect? No problem. Drop me a line sometime. </p>
+
+                <br>
+
+                <input type="text" name="name" id="namebox" placeholder="Name"> <input type="text" name="email" id="emailbox" placeholder="Email">
                 
-                <input type="text" name="name" id="namebox">
+                <br><br><br><br>
+
+                <!-- Clearfix-->
+                <div class="cleafix"></div>
                 
-                <br><br>
-                
-                Email:<br>
-                
-                <input type="text" name="email" id="emailbox">
-                
-                <br><br>
-                
-                Message:<br>
-                
-                <textarea type="text" name="message" id="messagebox"></textarea>
+                <textarea type="text" name="message" id="messagebox" placeholder="Enter Message"></textarea>
                 
                 <br><br>
                 
@@ -138,10 +244,31 @@
                 
                 <br><br>
             </form>
+
+            <div id="socialLinks">
+
+                <a href="https://github.com/sindygeb">
+                    <div class="icon">
+                        <img src="assets/images/githublogo.png" class="icons" id="gitLink">
+                    </div>
+                </a>
+                <a href="https://twitter.com/sindydesign">
+                    <div class="icon">
+                        <img src="assets/images/twitterlogo.png" class="icons" id="twitterLink">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/sindydesign/" class="icons" id="linkedLink">
+                    <div class="icon">
+                        <img src="assets/images/linkedin.png">
+                    </div>
+                </a>
+
+            </div>
+            
         </div>    
         <!-- Footer Stuff -->
         <div class="footer">
-            <p id="foot-text">Copyright © 2018</p>
+            <p id="foot-text">Copyright © 2019</p>
         </div>
 
         <!-- JQuery References -->
@@ -149,5 +276,5 @@
 
         <!-- Script File -->
         <script src="assets/javascript/site.js"></script>
-        </body>
+    </body>
 </html>
